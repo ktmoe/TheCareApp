@@ -75,7 +75,6 @@
                     android:layout_height="50dp"
                     android:background="@android:color/transparent"
                     android:singleLine="true"
-                    android:inputType="number"
                     android:layout_marginHorizontal="@dimen/margin_medium_2" />
             </com.google.android.material.card.MaterialCardView>
 
@@ -122,7 +121,7 @@
                     android:layout_weight="0.3"
                     tools:text="23"
                     app:backgroundTint="@color/backgroundColor"
-                    android:textColor="@color/skyBlue"
+                    android:textColor="@color/blue"
                     app:cornerRadius="@dimen/margin_medium"
                     android:drawableEnd="@drawable/ic_arrow_dropdown"
                     app:drawableTint="@color/blue"
@@ -135,7 +134,7 @@
                     android:layout_weight="0.3"
                     tools:text="Nov"
                     app:backgroundTint="@color/backgroundColor"
-                    android:textColor="@color/skyBlue"
+                    android:textColor="@color/blue"
                     app:cornerRadius="@dimen/margin_medium"
                     android:drawableEnd="@drawable/ic_arrow_dropdown"
                     app:drawableTint="@color/blue"
@@ -148,7 +147,7 @@
                     android:layout_weight="0.3"
                     tools:text="2020"
                     app:backgroundTint="@color/backgroundColor"
-                    android:textColor="@color/skyBlue"
+                    android:textColor="@color/blue"
                     app:cornerRadius="@dimen/margin_medium"
                     android:drawableEnd="@drawable/ic_arrow_dropdown"
                     app:drawableTint="@color/blue"
