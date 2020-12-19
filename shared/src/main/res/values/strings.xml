@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="disease_questions">ရောဂါဆိုင်ရာမေးခွန်းများ</string>
+    <string name="consulted_date">ဆွေးနွေးခဲ့သည့် နေ့စွဲ</string>
+    <string name="patient_name">လူနာအမည်</string>
+    <string name="dob">မွေးနေ့</string>
+    <string name="height">အရပ်</string>
+    <string name="blood_type">သွေးအမျိုးအစား</string>
+    <string name="weight">ပေါင်ချိန်</string>
+    <string name="blood_pressure">သွေးပေါင်ချိန်</string>
+    <string name="allergic_prescriptions">မတည့်သောဆေး</string>
+    <string name="start_consultation">ဆွေးနွေးမှုစတင်မည်</string>
+    <string name="colon">:</string>
+
+    <string name="dummy_text_long">သီဟိုဠ်မှ ဉာဏ်ကြီးရှင်သည် အာယုဝဍ္ဎနဆေးညွှန်းစာကို ဇလွန်ဈေးဘေး ဗာဒံပင်ထက် အဓိဋ္ဌာန်လျက် ဂဃနဏဖတ်ခဲ့သည်။</string>
+    <string name="dummy_text_short">ဂဃနဏဖတ်ခဲ့သည်။</string>
+
+    <string name="patient_info">လူနာအချက်အလက်</string>
+
+    <string name="profile">ပရိုဖိုင်</string>
+
+    //PrescriptionListItem
+    <string name="amount">ပမာဏ</string>
+    <string name="dosage">အရေအတွက်</string>
+    <string name="duration">ကြာချိန်</string>
+    <string name="time">အကြိမ်အရေအတွက်</string>
+    <string name="repeat">Repeat</string>
+    <string name="remark">မှတ်ချက်</string>
+    <string name="close">ပိတ်မည်</string>
+    <string name="prescription">ဆေးညွှန်း</string>
+
+    <string name="questions">မေးခွန်းများ</string>
+    <string name="prescript">ဆေးညွှန်းမည်</string>
+    <string name="medical_record">ဆေးမှတ်တမ်း</string>
+    <string name="write">ရေးသားပါ</string>
+
+    <string name="see_more"><![CDATA[ထပ်ကြည့်မည် >>]]></string>
+
+    <string name="send_message">စာပို့မည်</string>
+
+    <string name="upload_photo">ပုံတင်မည်</string>
+    <string name="phone_number">ဖုန်းနံပါတ်</string>
+    <string name="profile_name">အမည်</string>
+    <string name="logout"><u>အကောင့်မှထွက်မည်</u></string>
+    <string name="change_password"><u>လျှို့ဝှက်နံပါတ်ပြောင်းလဲမည်</u></string>
+    <string name="fill_profile_title">ပရိုဖိုင် ဖြည့်သွင်းမည်</string>
+    <string name="edit_profile_title">ပရိုဖိုင်ပြုပြင်မည်</string>
+    <string name="save">သိမ်းမည်</string>
+
+    <string name="address">လိပ်စာအပြည့်အစုံ</string>
+    <string name="fill_address">လိပ်စာအပြည့်အစုံ ရေးသားပေးပါ</string>
+    
+    //login
+    <string name="enter_mail">Enter E-mail</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="facebook_sign_in">Sign in with Facebook</string>
+    <string name="apple_sign_in">Sign in with Apple</string>
+
+    <string name="wip_feature">This Feature is not available yet</string>
+
+    <string name="theCareMM">The CareMM</string>
+    <string name="patientApp">PATIENT APP</string>
+    <string name="doctorApp">DOCTOR APP</string>
+    <string name="mail">E-Mail</string>
+    <string name="have_account">Already have an account? <u><font fgcolor="#005ccc">Login</font></u></string>
+    <string name="set_password">Set Password</string>
+    <string name="retype_password">Retype Password</string>
+
+    <string name="medicine_recommendation">Medicine Recommendation</string>
+
+    <string name="checkout">ဆေးညွှန်း မှာယူမည်</string>
+
+    <string name="no_consultation_record">ရက်ချိန်းယူမှု မှတ်တမ်းများ မရှိသေးပါ</string>
+</resources>

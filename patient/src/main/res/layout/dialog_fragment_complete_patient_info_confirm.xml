@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_medium_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_medium_2">
+
+        <ImageView
+            android:id="@+id/ivPatientInfoConfirm"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/margin_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            android:text="@string/confirm_info"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_info"
+            android:padding="@dimen/margin_medium"
+            app:chipBackgroundColor="@color/blue"
+            android:textColor="@color/white"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <include
+            android:id="@+id/vpPatientInfo"
+            layout="@layout/viewpod_patient_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disease_questions"
+            android:padding="@dimen/margin_medium"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="@color/blue"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAnsweredQAndA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            tool:listitem="@layout/item_answered_q_and_a"
+            tool:itemCount="2"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMakeAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/make_appointment"
+            android:paddingVertical="@dimen/margin_medium"
+            style="@style/BlueMaterialButton_round8dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

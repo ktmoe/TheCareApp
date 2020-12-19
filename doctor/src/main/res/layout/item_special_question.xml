@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/margin_medium_2"
+    app:strokeWidth="1dp"
+    android:elevation="4dp"
+    app:strokeColor="@android:color/secondary_text_dark"
+    android:layout_marginBottom="@dimen/margin_medium_2"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/specialQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_medium_2"
+        android:lineSpacingMultiplier="1.4"
+        android:layout_margin="@dimen/margin_medium"
+        tools:text="@string/dummy_text_long"/>
+
+</com.google.android.material.card.MaterialCardView>

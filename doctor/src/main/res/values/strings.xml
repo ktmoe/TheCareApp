@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Doctor App</string>
+
+    <string name="consultation_request">ရက်ချိန်းယူခြင်းတောင်းဆိုမှု</string>
+    <string name="new_patient">လူနာအသစ်</string>
+    <string name="old_patient">ဆွေးနွေးခဲ့ဖူးသောလူနာ</string>
+    <string name="dob">မွေးနေ့</string>
+    <string name="skip">ကျော်မည်</string>
+    <string name="accept">လက်ခံမည်</string>
+    <string name="consultation_record">ရက်ချိန်းယူမှု မှတ်တမ်းများ</string>
+
+    <string name="later">နောက်မှ</string>
+    <string name="schedule">အချိန်ရွေးမည်</string>
+
+    <string name="select_time_title">ဆွေးနွေးမည့်အချိန်ရွေးမည်</string>
+    <string name="select_time">ရွေးမည်</string>
+
+    <string name="prescript_and_end_session">ဆေးညွှန်းပြီး ဆွေးနွေးမှုကို ပြီးဆုံးမည်</string>
+    <string name="search">ရှာမည်</string>
+
+    <string name="tab_count">အရေအတွက်</string>
+    <string name="tab">tab</string>
+    <string name="days_to_take_medicine">သောက်ရမည့်ရက်</string>
+    <string name="repeat">အကြိမ်အရေအတွက်</string>
+    <string name="morning">မနက်</string>
+    <string name="noon">နေ့</string>
+    <string name="night">ည</string>
+    <string name="object_medicine">ဆေးကို</string>
+    <string name="before_meal">အစာမစားမီသောက်ရန်</string>
+    <string name="after_meal">အစာစားပြီးမှသောက်ရန်</string>
+    <string name="add_medicine">ထည့်မည်</string>
+    <string name="save">သိမ်းမည်</string>
+    <string name="write_medical_record">ဆေးမှတ်တမ်း ရေးသားရန်</string>
+    <string name="degrees">ရရှိထားသော ဘွဲ့များ</string>
+    <string name="doctor_profile">ကိုယ်ရေးရာဇဝင်</string>
+
+    <string name="specialty">အထူးကု</string>
+    <string name="experience">လုပ်သက်</string>
+    <string name="gender">အမျိုးသား/အမျိုးသမီး</string>
+    <string name="male">အမျိုးသား</string>
+    <string name="female">အမျိုးသမီး</string>
+
+    <string-array name="day_units">
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
+</resources>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="@string/edit_profile_title"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium_2">
+                <ImageView
+                    android:id="@+id/ivDoctor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    tools:src="@drawable/ic_launcher_background"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintWidth_percent="0.3"
+                    app:layout_constraintDimensionRatio="H,1:1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_photo"
+                    app:layout_constraintStart_toStartOf="@id/ivDoctor"
+                    app:layout_constraintWidth_percent="0.3"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_medium"
+                    android:background="#86121212"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_name"
+                android:padding="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium_2" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium_2"
+                app:cardCornerRadius="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/softPurple">
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true"
+                    android:layout_marginHorizontal="@dimen/margin_medium_2" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"
+                android:padding="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium_2" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium_2"
+                app:cardCornerRadius="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/softPurple">
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:layout_marginHorizontal="@dimen/margin_medium_2" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/specialty"
+                android:padding="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium_2" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium_2"
+                app:cardCornerRadius="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/softPurple">
+                <Spinner
+                    android:id="@+id/spinnerSpecialty"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="@dimen/margin_medium_2" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dob"
+                android:layout_marginHorizontal="@dimen/margin_medium_2"
+                android:padding="@dimen/margin_medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/margin_medium_2"
+                android:weightSum="0.9">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/dateOfDob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    tools:text="23"
+                    app:backgroundTint="@color/softPurple"
+                    android:textColor="@color/black"
+                    app:cornerRadius="@dimen/margin_medium"
+                    android:drawableEnd="@drawable/ic_arrow_dropdown"
+                    app:elevation="@dimen/margin_medium_2"
+                    android:layout_marginEnd="@dimen/margin_medium"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/monthOfDob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    tools:text="Nov"
+                    app:backgroundTint="@color/softPurple"
+                    android:textColor="@color/black"
+                    app:cornerRadius="@dimen/margin_medium"
+                    android:drawableEnd="@drawable/ic_arrow_dropdown"
+                    app:elevation="@dimen/margin_medium_2"
+                    android:layout_marginEnd="@dimen/margin_medium"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/yearOfDob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    tools:text="2020"
+                    app:backgroundTint="@color/softPurple"
+                    android:textColor="@color/black"
+                    app:cornerRadius="@dimen/margin_medium"
+                    android:drawableEnd="@drawable/ic_arrow_dropdown"
+                    app:elevation="@dimen/margin_medium_2"
+                    android:layout_marginEnd="@dimen/margin_medium"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/experience"
+                android:padding="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium_2" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium_2"
+                app:cardCornerRadius="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/softPurple">
+                <EditText
+                    android:id="@+id/etExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true"
+                    android:layout_marginHorizontal="@dimen/margin_medium_2" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:layout_marginHorizontal="@dimen/margin_medium_2"
+                android:padding="@dimen/margin_medium"/>
+
+            <RadioGroup
+                android:id="@+id/genderGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/margin_medium_2">
+                <RadioButton
+                    android:id="@+id/maleRadio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/male"/>
+
+                <RadioButton
+                    android:id="@+id/femaleRadio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/female"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium_2"
+                android:text="@string/address"
+                android:padding="@dimen/margin_medium"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/softPurple"
+                android:layout_marginHorizontal="@dimen/margin_medium_2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="@dimen/margin_medium_2">
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/complete_forms_text_field_height"
+                        android:gravity="top"
+                        android:layout_marginHorizontal="@dimen/margin_medium_2"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:hint="@string/fill_address"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium_2"
+                android:text="@string/degrees"
+                android:padding="@dimen/margin_medium"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/softPurple"
+                android:layout_marginHorizontal="@dimen/margin_medium_2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="@dimen/margin_medium_2">
+                    <EditText
+                        android:id="@+id/etDegrees"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/complete_forms_text_field_height"
+                        android:gravity="top"
+                        android:layout_marginHorizontal="@dimen/margin_medium_2"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium_2"
+                android:text="@string/doctor_profile"
+                android:padding="@dimen/margin_medium"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/softPurple"
+                android:layout_marginHorizontal="@dimen/margin_medium_2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="@dimen/margin_medium_2">
+                    <EditText
+                        android:id="@+id/etProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/complete_forms_text_field_height"
+                        android:gravity="top"
+                        android:layout_marginHorizontal="@dimen/margin_medium_2"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_medium_2"
+                style="@style/BlueMaterialButton_round8dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

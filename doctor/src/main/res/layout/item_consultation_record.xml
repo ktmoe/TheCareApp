@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/margin_medium"
+    app:cardElevation="8dp"
+    android:layout_marginBottom="@dimen/margin_medium_2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_medium_2">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivPatient"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tvPatientDob"
+            android:layout_margin="@dimen/margin_medium_2"/>
+
+        <TextView
+            android:id="@+id/tvPatientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            app:layout_constraintStart_toEndOf="@id/ivPatient"
+            app:layout_constraintTop_toTopOf="@id/ivPatient"/>
+
+        <TextView
+            android:id="@+id/tvPatientDob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            app:layout_constraintStart_toStartOf="@id/tvPatientName"
+            app:layout_constraintTop_toBottomOf="@id/tvPatientName"
+            app:drawableStartCompat="@drawable/ic_calendar"
+            app:drawableTint="@color/blue" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivPatient"
+            app:layout_constraintBottom_toBottomOf="@id/tvPatientDob"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            style="@style/BlueMaterialButton_round16dp"
+            android:text="@string/send_message"/>
+
+        <View
+            android:id="@+id/viewHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintTop_toBottomOf="@id/tvPatientDob"
+            app:layout_constraintBottom_toTopOf="@id/btnMedicalHistory"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMedicalHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnPrescription"
+            app:layout_constraintTop_toBottomOf="@id/viewHorizontal"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/blue"
+            android:text="@string/medical_record"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/viewHorizontal"
+            app:layout_constraintBottom_toBottomOf="@id/btnMedicalHistory"
+            app:layout_constraintStart_toEndOf="@id/btnMedicalHistory"
+            app:layout_constraintEnd_toStartOf="@id/btnPrescription"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/btnMessage"
+            app:layout_constraintStart_toEndOf="@id/btnMedicalHistory"
+            app:layout_constraintTop_toTopOf="@id/btnMedicalHistory"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/blue"
+            android:text="@string/prescription"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/viewHorizontal"
+            app:layout_constraintBottom_toBottomOf="@id/btnPrescription"
+            app:layout_constraintEnd_toStartOf="@id/btnRemark"
+            app:layout_constraintStart_toEndOf="@id/btnPrescription"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnPrescription"
+            app:layout_constraintTop_toTopOf="@id/btnMedicalHistory"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/blue"
+            android:text="@string/remark"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

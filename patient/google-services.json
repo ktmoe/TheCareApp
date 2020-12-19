@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "277503795343",
+    "firebase_url": "https://the-care-app-746f3.firebaseio.com",
+    "project_id": "the-care-app-746f3",
+    "storage_bucket": "the-care-app-746f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277503795343:android:63a598523750195ced50fa",
+        "android_client_info": {
+          "package_name": "com.ktmmoe.doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277503795343-210l4tvcuomdd5e04l5t9m60pf56aoih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeiFBbMayUq4XPR3urKnQtYNCkloG6xzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277503795343-210l4tvcuomdd5e04l5t9m60pf56aoih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277503795343:android:850fd4ca06d991f4ed50fa",
+        "android_client_info": {
+          "package_name": "com.ktmmoe.patient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277503795343-210l4tvcuomdd5e04l5t9m60pf56aoih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeiFBbMayUq4XPR3urKnQtYNCkloG6xzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277503795343-210l4tvcuomdd5e04l5t9m60pf56aoih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

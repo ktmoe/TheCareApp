@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/margin_medium"
+    app:cardElevation="8dp"
+    android:layout_marginEnd="@dimen/margin_medium"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_medium_2"
+        android:layout_marginHorizontal="@dimen/margin_medium">
+
+        <ImageView
+            android:id="@+id/infoIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_info"
+            app:tint="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvAcceptedRequestTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/infoIcon"
+            app:layout_constraintTop_toTopOf="@id/infoIcon"
+            app:layout_constraintBottom_toBottomOf="@id/infoIcon"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:text="@string/accepted_request_title"
+            android:layout_margin="@dimen/margin_medium_2"/>
+
+        <TextView
+            android:id="@+id/tvAcceptedRequestMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAcceptedRequestTitle"
+            android:textColor="@color/black"
+            android:text="@string/accepted_request_message"
+            android:layout_margin="@dimen/margin_medium_2"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivDoctor"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            tools:src="@drawable/ic_launcher_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAcceptedRequestMessage"
+            android:layout_margin="@dimen/margin_medium_2"/>
+
+        <TextView
+            android:id="@+id/tvDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            app:layout_constraintStart_toEndOf="@id/ivDoctor"
+            app:layout_constraintTop_toTopOf="@id/ivDoctor"/>
+
+        <TextView
+            android:id="@+id/tvDoctorSpeciality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintStart_toStartOf="@id/tvDoctorName"
+            app:layout_constraintTop_toBottomOf="@id/tvDoctorName"/>
+
+        <TextView
+            android:id="@+id/tvDoctorProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ivDoctor"
+            android:textColor="@color/black"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="@string/accepted_request_message"
+            android:layout_margin="@dimen/margin_medium_2"/>
+
+        <TextView
+            android:id="@+id/tvStartConsultation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDoctorProfile"
+            android:textColor="@color/blue"
+            android:text="@string/start_consultation"
+            android:layout_margin="@dimen/margin_medium_2"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BlueMaterialButton_round8dp" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/blue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="SkyBlueMaterialButton_round8dp" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/skyBlue</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="BlueMaterialButton_round16dp" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/blue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <style name="OutlinedRoundedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded</item>
+        <item name="boxStrokeColor">@android:color/darker_gray</item>
+        <item name="hintTextColor">@android:color/darker_gray</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+    </style>
+
+    <style name="FilledRoundedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded</item>
+        <item name="boxBackgroundColor">#EAEAEA</item>
+        <item name="hintTextColor">@android:color/darker_gray</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">40dp</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/teal_700</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DatePickerButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DatePickerButtonStyle</item>
+    </style>
+
+    <style name="DatePickerButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/teal_700</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="RoundedCornersDialog" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="dialogCornerRadius">8dp</item>
+    </style>
+</resources>

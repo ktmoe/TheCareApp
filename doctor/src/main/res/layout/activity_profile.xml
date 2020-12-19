@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activities.ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="@string/profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/infoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_medium_2">
+                <ImageView
+                    android:id="@+id/ivDoctorProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="@dimen/margin_medium_3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.3"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    tools:src="@drawable/ic_launcher_background"/>
+                <TextView
+                    android:id="@+id/doctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/ivDoctorProfile"
+                    app:layout_constraintTop_toTopOf="@id/ivDoctorProfile"
+                    app:layout_constraintBottom_toBottomOf="@id/ivDoctorProfile"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:layout_marginHorizontal="@dimen/margin_medium_2"
+                    android:layout_marginVertical="@dimen/margin_small"
+                    tools:text="@string/dummy_text_short"/>
+                <TextView
+                    android:id="@+id/doctorPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/doctorName"
+                    app:layout_constraintTop_toBottomOf="@id/doctorName"
+                    android:layout_marginVertical="@dimen/margin_small"
+                    tools:text="@string/dummy_text_short"/>
+                <TextView
+                    android:id="@+id/doctorSpeciality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/doctorPhone"
+                    app:layout_constraintTop_toBottomOf="@id/doctorPhone"
+                    android:layout_marginVertical="@dimen/margin_small"
+                    tools:text="@string/dummy_text_short"/>
+
+                <include
+                    android:id="@+id/doctorInfoLayout"
+                    layout="@layout/layout_doctor_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_3"
+                    app:layout_constraintTop_toBottomOf="@id/ivDoctorProfile"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/degreesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/degrees"
+                    app:chipBackgroundColor="@color/blue"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    app:layout_constraintTop_toBottomOf="@id/doctorInfoLayout"
+                    app:layout_constraintStart_toStartOf="@id/ivDoctorProfile"/>
+                <TextView
+                    android:id="@+id/degrees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_text_long"
+                    app:layout_constraintStart_toStartOf="@id/degreesTitle"
+                    app:layout_constraintTop_toBottomOf="@id/degreesTitle"
+                    android:lineSpacingMultiplier="1.4"
+                    android:layout_marginTop="@dimen/margin_medium_2"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/doctorProfileTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/doctor_profile"
+                    app:chipBackgroundColor="@color/blue"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    app:layout_constraintTop_toBottomOf="@id/degrees"
+                    app:layout_constraintStart_toStartOf="@id/degrees"/>
+                <TextView
+                    android:id="@+id/doctorProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_text_long"
+                    app:layout_constraintStart_toStartOf="@id/doctorProfileTitle"
+                    app:layout_constraintTop_toBottomOf="@id/doctorProfileTitle"
+                    android:lineSpacingMultiplier="1.4"
+                    android:layout_marginTop="@dimen/margin_medium_2"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/tvLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/margin_medium_2"
+                app:layout_constraintTop_toBottomOf="@id/infoLayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvChangePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_password"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/margin_medium_2"
+                app:layout_constraintTop_toTopOf="@id/tvLogout"
+                app:layout_constraintBottom_toBottomOf="@id/tvLogout"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

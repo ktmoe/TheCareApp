@@ -1,0 +1,4 @@
+include ':patient'
+include ':shared'
+include ':doctor'
+rootProject.name = "The Care App"

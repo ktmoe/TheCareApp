@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/ivCancelCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:src="@drawable/ic_cancel"/>
+
+    <ImageView
+        android:id="@+id/ivNoProfileInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:src="@drawable/ic_profile_information"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#424656"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="6sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivNoProfileInfo"
+        android:text="@string/no_profile_info" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fillIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fill_in"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="@dimen/margin_medium_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMessage"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
